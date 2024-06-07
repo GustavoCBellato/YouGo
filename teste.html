@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Locais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .search-bar {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .search-bar input {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .result-item {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .result-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .result-item .details {
+            flex-grow: 1;
+        }
+        .details h3 {
+            margin: 0 0 10px;
+        }
+        .details p {
+            margin: 5px 0;
+        }
+        .details .rating {
+            color: #f39c12;
+        }
+        .details .view-more {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+        .view-360 {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .view-360 iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Busca de Locais</h1>
+    </header>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar por restaurantes, bares e outros locais">
+            <button>Buscar</button>
+        </div>
+        <div class="result-item">
+            <img src="https://via.placeholder.com/100" alt="Local">
+            <div class="details">
+                <h3>Nome do Local</h3>
+                <p>Tipo: Restaurante</p>
+                <p class="rating">Avaliação: ★★★★☆</p>
+                <a href="#" class="view-more">Ver mais</a>
+            </div>
+        </div>
+        <!-- Mais itens de resultado podem ser adicionados aqui -->
+    </div>
+    <div class="container view-360">
+        <h2>Visão 360</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1537789679946!6m8!1m7!1sCAoSLEFGMVFpcFBfN0w4S0pDTkt1Y1p2VTh6RkFkaXRUYXl4em5nVGRudWozQmly!2m2!1d-34.9284989!2d138.6007456!3f190!4f0!5f0.7820865974627469"></iframe>
+    </div>
+</body>
+</html>
