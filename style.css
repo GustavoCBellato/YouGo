@@ -32,7 +32,6 @@ main {
     margin-top: 10vh;
 }
 
-
 .logo img {
     max-width: 37vw;
     min-width: 20vw;
@@ -134,6 +133,24 @@ article {
 
 article:hover {
     width: 32vw;
+}
+
+.trezentos {
+    display: flex;
+    position: relative;
+}
+
+.trezentin {
+    position: absolute;
+    right: 10px;
+    top: -2vw;
+    width: 10vw;
+    transition: 2s;
+}
+
+.trezentin:hover {
+    width: 13vw;
+    transform: rotate(20deg);
 }
 
 article img {
